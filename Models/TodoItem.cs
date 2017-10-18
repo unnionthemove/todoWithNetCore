@@ -1,9 +1,16 @@
-﻿namespace TodoApi.Models
+﻿using Newtonsoft.Json;
+
+namespace TodoApi.Models
 {
     public class TodoItem
     {
-        public long Id { get; set; }
+        [JsonProperty(PropertyName = "id")]
+        public string Id { get; set; }
+
+        [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
+
+        [JsonProperty(PropertyName = "isComplete")]
         public bool IsComplete { get; set; }
     }
 }

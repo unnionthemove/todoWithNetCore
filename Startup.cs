@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using TodoApi.Models;
+using TodoApi.Services;
 
 namespace TodoApi
 {
@@ -9,8 +9,9 @@ namespace TodoApi
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<TodoContext>(opt => opt.UseInMemoryDatabase("TodoList"));
             services.AddMvc();
+            //Register the Item service
+            services.AddTransient<ITodoItemService, TodoItemService>();
         }
 
         public void Configure(IApplicationBuilder app)
