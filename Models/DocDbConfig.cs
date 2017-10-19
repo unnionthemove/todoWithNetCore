@@ -9,8 +9,8 @@ namespace TodoApi.Models
     {
         public DocDbConfig()
         {
-            Endpoint = "FILLME IN";
-            AuthKey = "FILLMEIN";
+            Endpoint = "https://todotest.documents.azure.com:443/";
+            AuthKey = "rwXrksEn8eJCtbDS2s6SevLuRw02MLF0pnlO75VcpHlp3Ox3cXWfs0LCFEU9TGRA6ivj7VHgln3zLDXcwUtYrw==";
             Database = "todotest";
             Collection = "ItemsCollection";
         }
