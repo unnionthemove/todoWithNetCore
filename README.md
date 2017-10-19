@@ -12,7 +12,7 @@ This tutorial was taken and extended to
 This creates a api only application to interact with TodoItems
 This can be a starting project if learning to use Visual Studio 2017,  C# and Interacting with Azure. 
 
-This was used to publish directly and be available as a App Service in the Azure account
+Visual Studion 2017 was used to publish directly and be available as a App Service in the Azure account
 
 #TODO
  1. More meaning full test cases.
